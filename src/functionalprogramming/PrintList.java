@@ -3,14 +3,15 @@ package functionalprogramming;
 import java.util.Arrays;
 import java.util.List;
 
-public class Test {
+public class PrintList {
 
     public static void print(int number) {
         System.out.println(number);
     }
 
     public static void printAllNumbersInListFunctional(List<Integer> numbers) {
-        numbers.forEach(Test::print);
+        //numbers.forEach(PrintList::print);
+        numbers.forEach(System.out::println);
     }
 
     public static void main(String[] args) {
