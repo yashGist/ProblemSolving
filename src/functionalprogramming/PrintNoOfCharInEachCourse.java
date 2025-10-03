@@ -7,12 +7,20 @@ public class PrintNoOfCharInEachCourse {
 
     public static void printNoOfCharInEachString(List<String> courses) {
         courses.stream()
-                .map(String::length)
+                .map( String::length)
                 .forEach(System.out::println);
     }
 
+    public static void printNoOfCharInEachStrings(List<String> courses) {
+        courses.stream()
+                .map(course -> course + " " + course.length())
+                .forEach(System.out::println);
+    }
+
+
+
     public static void main(String[] args) {
         List<String> courses = Arrays.asList("Spring", "SpringBoot", "API", "Microservices", "AWS", "PCF", "Docker", "Kubernetes");
-        printNoOfCharInEachString(courses);
+        printNoOfCharInEachStrings(courses);
     }
 }
