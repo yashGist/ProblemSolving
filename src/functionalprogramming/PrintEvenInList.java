@@ -11,8 +11,7 @@ public class PrintEvenInList {
                 .forEach(System.out::println);
     }
 
-    public static void even() {
-        int num = 52;
+    public static void even(int num) {
         if ((num & 1) == 0) {
             System.out.println("even");
         } else {

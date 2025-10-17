@@ -206,7 +206,7 @@ public class PatternsQuest {
     }
 
     public static void main(String[] args) {
-        pattern32(4);
+        pattern27();
     }
 
 }
